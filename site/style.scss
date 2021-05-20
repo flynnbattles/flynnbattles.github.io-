@@ -5,8 +5,13 @@
 // IMPORTS
 //
 
+//this is a change
+
 @import "reset";
 @import "variables";
+@import "svg-icons";
+@import url('https://fonts.googleapis.com/css?family=Poppins:400|Red+Hat+Display:500');
+@import url('https://fonts.googleapis.com/css?family=DM_Sans:400|Red+Hat+Display:500');
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -16,11 +21,11 @@
 html {
   font-size: 100%;
 }
+
 body {
-	background: white;
-  opacity: 1;
-  font: 18px/1.4 $TimesNewRoman ;
-  color: $darkGray;
+	background: #39323E;
+  font: 18px/1.4 $poppins;
+  color: #D4DDE0;
 }
 
 .container {
@@ -29,15 +34,10 @@ body {
   padding: 0 10px;
   width: 100%;
 }
-h1{
-    font-family: 'Avenir';
-    padding: 0px 100px;
-    color:black;
-    display: flex;
-}
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $darkerGray;
+  font-family: $poppins;
+  color: #E9DA3B;
   font-weight: bold;
 
   line-height: 1.7;
@@ -66,7 +66,7 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: $gray;
+  color: #D4DDE0;
 }
 
 p {
@@ -74,11 +74,11 @@ p {
 }
 
 a {
-  color: $blue;
+  color: rgb(165, 209, 230);
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color:$blue;
   }
 }
 
@@ -122,7 +122,7 @@ img {
 
 .date {
   font-style: italic;
-  color: $gray;
+  color: $white;
 }
 
 // Specify the color of the selection
@@ -197,9 +197,9 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: #ddd;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: $poppins;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -207,7 +207,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color: #ddd;
   font-size: 16px;
 
   @include mobile {
@@ -218,7 +218,7 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  font-family: $poppins;
   font-size: 18px;
 
   @include mobile {
@@ -230,14 +230,14 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: #D4DDE0;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
 
     @include mobile {
       margin: 0 10px;
-      color: $blue;
+      color: rgb(165, 209, 230);
     }
   }
 }
@@ -248,7 +248,7 @@ nav {
 
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid #000;
 }
 
 .posts > .post:last-child {
@@ -259,9 +259,9 @@ nav {
 .post {
   blockquote {
     margin: 1.8em .8em;
-    border-left: 2px solid $gray;
+    border-left: 2px solid #000;
     padding: 0.1em 1em;
-    color: $gray;
+    color: #000;
     font-size: 22px;
     font-style: italic;
   }
@@ -277,16 +277,21 @@ nav {
 }
 
 .wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  margin-top: 20px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  background-color: #000;
 }
 
 footer {
   padding: 20px 0;
   text-align: center;
 }
+
+
+
+
+
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start

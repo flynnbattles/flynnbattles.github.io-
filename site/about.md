@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+Gabriel Salomon is a multimedia artist currently studying Music Technology at the California Institute of the Arts. Away from the institute, he spends most of his time bouncing between three mediums: music, film & video, and photography. Based in Los Angeles.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[gabrielsalomon@alum.calarts.edu](mailto:gabrielsalomon@alum.calarts.edu)
